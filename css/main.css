@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+.glowing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%); */
+  background: #ff0;
+  width: 260px;
+  height: 260px;
+  
+}
+
+.glowing .spans {
+  position: absolute;
+  border-radius: 50%;
+  box-sizing: border-box;
+  /* -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+   */
+}
+
+.glowing .spans:nth-child(1) {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(255,255,255,.1);
+  animation: animate 4s linear infinite;
+  -webkit-animation: animate 4s linear infinite;
+}
+
+.glowing .spans:nth-child(2) {
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  border: 1px solid rgba(255,255,255,.1);
+  animation: animate 4s linear infinite;
+  -webkit-animation: animate 4s linear infinite;
+}
+
+.glowing .spans:nth-child(2) {
+  top: 80px;
+  left: 80px;
+  right: 80px;
+  bottom: 80px;
+  border: 1px solid rgba(255,255,255,.1);
+  animation: animate 4s linear infinite;
+  -webkit-animation: animate 4s linear infinite;
+}
