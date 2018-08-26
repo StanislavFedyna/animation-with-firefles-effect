@@ -57,9 +57,9 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  animation: animate 4s linear infinite;
-  -webkit-animation: animate 4s linear infinite;
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  animation: animate 2s linear infinite;
+  -webkit-animation: animate 2s linear infinite;
 }
 
 .glowing .spans:nth-child(2):before {
@@ -77,9 +77,9 @@ body {
   left: 40px;
   right: 40px;
   bottom: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  animation: animate 4s linear infinite;
-  -webkit-animation: animate 4s linear infinite;
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  animation: animate-reverse 2.5s linear infinite;
+  -webkit-animation: animate-reverse 2.5s linear infinite;
 }
 .glowing .spans:nth-child(3):before {
   background: rgba(0, 226, 255, 1);
@@ -95,8 +95,41 @@ body {
   left: 80px;
   right: 80px;
   bottom: 80px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  animation: animate 4s linear infinite;
-  -webkit-animation: animate 4s linear infinite;
+  /*border: 1px solid rgba(255, 255, 255, 0.3);
+  */animation: animate 2.5s linear infinite;
+  -webkit-animation: animate 2.5s linear infinite;
 }
 
+@keyframes animate{
+  0%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+  100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+}
+
+@keyframes animate-reverse{
+  0%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+  100%{
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+}
+}
