@@ -2,7 +2,6 @@ body
 {
     margin: 0;
     padding: 0;
-
     background-color: #000;
 }
 
@@ -11,7 +10,6 @@ body
     position: absolute;
     top: 50%;
     left: 50%;
-
     width: 260px;
     height: 260px;
 
@@ -25,13 +23,10 @@ body
 .glowing .spans
 {
     position: absolute;
-
     box-sizing: border-box;
-
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
-
         -ms-border-radius: 50%;
          -o-border-radius: 50%;
 }
@@ -41,17 +36,13 @@ body
     position: absolute;
     top: 50%;
     left: -5px;
-
     width: 10px;
     height: 10px;
-
     content: '';
-
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
     background: #ff0;
-
         -ms-border-radius: 50%;
          -o-border-radius: 50%;
 }
@@ -72,7 +63,6 @@ body
     right: 0;
     bottom: 0;
     left: 0;
-
     -webkit-animation: animate 2s linear infinite;
     /* border: 1px solid rgba(255, 255, 255, 0.3); */
             animation: animate 2s linear infinite;
@@ -94,7 +84,6 @@ body
     right: 40px;
     bottom: 40px;
     left: 40px;
-
     -webkit-animation: animate-reverse 2.5s linear infinite;
     /* border: 1px solid rgba(255, 255, 255, 0.3); */
             animation: animate-reverse 2.5s linear infinite;
@@ -114,10 +103,10 @@ body
     right: 80px;
     bottom: 80px;
     left: 80px;
-
     -webkit-animation: animate 2.5s linear infinite;
-                                    /*border: 1px solid rgba(255, 255, 255, 0.3);
-  */animation: animate 2.5s linear infinite;
+     /*border: 1px solid rgba(255, 255, 255, 0.3);
+  */
+    animation: animate 2.5s linear infinite;
 }
 
 @keyframes animate
